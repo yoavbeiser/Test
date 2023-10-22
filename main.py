@@ -4,6 +4,7 @@ class Person:
     def __init__(self, age, name):
         self.age = age
         self.name = name
+        Person.number_of_people += 1
 
     def __str__(self):
         return f"name is {self.name} and {self.age} years old"
